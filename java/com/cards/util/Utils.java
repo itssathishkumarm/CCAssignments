@@ -9,7 +9,7 @@ public class Utils {
         JSONArray cards = new JSONObject(response.asString()).getJSONArray("cards");
         int value = 0;
         boolean ace = false;
-      int Cardsdraw = cards.length()-1;
+      int Cardsdraw = cards.length();
         for (int i = 0; i < cards.length(); i++) {
             JSONObject card = cards.getJSONObject(i);
             String cardValue = card.getString("value");
@@ -43,7 +43,7 @@ public class Utils {
         JSONArray cards = new JSONObject(response.asString()).getJSONArray("cards");
         int value = 0;
         boolean ace = false;
-        int Cardsdraw = cards.length()-1;
+        int Cardsdraw = cards.length();
         for (int i = 0; i <cards.length()-1; i++)
         {
             JSONObject card = cards.getJSONObject(i);
